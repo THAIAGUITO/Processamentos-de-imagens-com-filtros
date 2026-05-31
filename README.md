@@ -121,7 +121,3 @@ O **Filtro de Sobel** foi o único desenvolvido especificamente para detecção 
 | **Sobel** | Detecção de objetos e contornos em sistemas de visão industrial; reconhecimento de placas de trânsito e leitura de texto em imagens; análise de imagens de satélite para identificar limites de regiões; extração de características em redes neurais convolucionais |
 
 ---
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
