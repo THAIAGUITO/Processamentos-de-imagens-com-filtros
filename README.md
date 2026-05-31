@@ -56,7 +56,7 @@ Este projeto tem como objetivo aplicar e comparar filtros clássicos de processa
 
 **1. Clone o repositório**
 ```bash
-git clone **https://github.com/THAIAGUITO/Processamentos-de-imagens-com-filtros**
+git clone https://github.com/THAIAGUITO/Processamentos-de-imagens-com-filtros
 cd pipeline-filtros-imagem
 ```
 
