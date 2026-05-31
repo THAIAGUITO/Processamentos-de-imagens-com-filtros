@@ -1,4 +1,4 @@
-# 🖼️ pipeline-filtros-imagem
+# 🖼️ Processamento de imagem com filtro Média, Mediana e Sobel
 
 Projeto de processamento digital de imagens com aplicação dos filtros clássicos de **Média**, **Mediana** e **Sobel** utilizando Python. Os resultados são exibidos lado a lado e salvos automaticamente na pasta de saída.
 
