@@ -56,7 +56,7 @@ Este projeto tem como objetivo aplicar e comparar filtros clássicos de processa
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/pipeline-filtros-imagem.git
+git clone https://github.com//pipeline-filtros-imagem.git
 cd pipeline-filtros-imagem
 ```
 
@@ -86,13 +86,13 @@ Os resultados serão salvos automaticamente na pasta `resultados/`.
 ## 🔍 Filtros Implementados
 
 ### Filtro de Média
-Substitui cada pixel pela média aritmética dos seus vizinhos dentro de uma janela N×N. Suaviza a imagem de forma uniforme, sendo eficaz contra ruído gaussiano, mas pode borrar bordas com kernels maiores.
+Suaviza a imagem de forma uniforme, sendo eficaz contra ruído Gaussiano, mas pode borrar bordas com kernels maiores.
 
 ### Filtro de Mediana
-Substitui cada pixel pelo valor mediano da janela N×N. Preserva bordas melhor que a média e é especialmente eficaz para remover ruído sal e pimenta.
+Preserva bordas melhor que a média e é especialmente eficaz para remover ruído sal e pimenta.
 
 ### Filtro de Sobel
-Calcula o gradiente da intensidade da imagem nas direções horizontal (Gx) e vertical (Gy), combinando os resultados pela magnitude `√(Gx² + Gy²)`. Destaca regiões de transição de intensidade, ou seja, as bordas da imagem.
+Destaca regiões de transição de intensidade, ou seja, as bordas da imagem.
 
 ---
 
@@ -101,16 +101,16 @@ Calcula o gradiente da intensidade da imagem nas direções horizontal (Gx) e ve
 ### a) Como a imagem original mudou após a aplicação de cada filtro?
 
 - **Filtro de Média** — a imagem ficou visivelmente mais suave e com menos detalhes finos. Pequenas variações de cor e textura foram atenuadas, e as bordas perderam um pouco de definição, especialmente com kernels maiores.
-- **Filtro de Mediana** — o resultado também foi uma imagem mais suave, porém com as bordas mais preservadas em comparação à média. Ruídos pontuais (pixels isolados muito claros ou escuros) foram eliminados de forma mais eficiente.
+- **Filtro de Mediana** — o resultado também foi uma imagem mais suave, porém com as bordas mais preservadas em comparação à média. Ruídos pontuais foram eliminados de forma mais eficiente.
 - **Filtro de Sobel** — a imagem foi transformada em escala de cinza, destacando apenas as regiões de transição de intensidade. O resultado evidencia contornos, bordas e detalhes de textura que antes se misturavam ao restante da imagem.
 
 ### b) Qual filtro foi mais eficaz para suavizar a imagem?
 
-O **Filtro de Média** foi o mais eficaz para suavização geral da imagem, pois distribui a influência de todos os pixels vizinhos de forma uniforme. Com kernels maiores (acima de 7×7), o efeito de borramento fica cada vez mais evidente. O **Filtro de Mediana** também suaviza bem, mas tende a preservar bordas, o que o torna menos agressivo na suavização de regiões texturizadas.
+O **Filtro de Média** foi o mais eficaz para suavização da imagem, pois distribui a influência de todos os pixels vizinhos de forma uniforme. Com kernels maiores (acima de 7×7), o efeito de borramento fica cada vez mais evidente. O **Filtro de Mediana** também suaviza bem, mas tende a preservar bordas, o que o torna menos agressivo na suavização de regiões texturizadas.
 
 ### c) Qual filtro foi mais eficaz para destacar as bordas?
 
-O **Filtro de Sobel** foi o único desenvolvido especificamente para detecção de bordas. Ao calcular o gradiente da intensidade, ele transforma a imagem em um mapa de bordas, onde regiões com forte variação de brilho aparecem com alta intensidade e regiões homogêneas ficam escuras. Nenhum dos filtros de suavização é adequado para esse propósito.
+O **Filtro de Sobel** foi o mais eficaz para destacar as bordas. Ele transforma a imagem em um mapa de bordas, onde regiões com forte variação de brilho aparecem com alta intensidade e regiões homogêneas ficam escuras. Nenhum dos filtros de suavização é adequado para esse propósito já o filtro de **Sobel** sim.
 
 ### d) Quais situações podem exigir o uso de cada tipo de filtro em um projeto real?
 
